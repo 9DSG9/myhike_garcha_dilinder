@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>My BCIT Project</title>
+    <title>Saved</title>
     <meta name="comp1800 template" content="My 1800 App">
 
     <!------------------------>
@@ -48,9 +48,27 @@
     <nav id="navbarPlaceholder"></nav>
 
     <!-- the body of your page goes here -->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/LLFhKaqnWwk" frameborder="0"
-        allowfullscreen></iframe>
+    <div class="container">
+        <h1>Saved Hikes for <span id=name-goes-here></span></h1>
+        <!-- Here is container for cards  -->
+        <div class="container">
+            <div id="hikeCardGroup" class="row row-cols-auto">
+            </div>
+        </div>
+    </div>
 
+    <!-- Templates for general use, not displayed -->
+    <template id="savedCardTemplate">
+        <div class="card py-2 mx-2 bg-light" style="width: 10rem;">
+            <img class="card-image card-img-top" src=" ..." alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-length">placeholder</p>
+                <br>
+                <a class="btn btn-secondary card-href" id="read-more">Read more ...</a>
+            </div>
+        </div>
+    </template>
 
     <!-- our own footer goes here-->
     <nav id="footerPlaceholder"></nav>
@@ -60,7 +78,7 @@
     <!---------------------------------------------->
     <script src="./scripts/firebaseAPI_DTC12.js"></script>
     <script src="./scripts/skeleton.js"></script>
-    <!-- <script src="./scripts/script.js"></script> -->
+    <script src="./scripts/save.js"></script>
 
 </body>
 
